@@ -1,10 +1,16 @@
-body{
-  background:greenyellow;
-}
 .InvieHero {
+  background: url('../images/background.png') #466173;
   padding: 20px;
   height: 500px;
 }
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+
+.InvieHero {
+    background: url('../images/background2x.png') #466173
+}
+  }
+
 .InvieHero-header{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -16,5 +22,35 @@ body{
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background: red;
   }
+
+.InvieHero-logo{
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+  }
+
+.InvieHero-logo:hover {
+      filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="4" /></filter></svg>#filter');
+      -webkit-filter: blur(4px);
+              filter: blur(4px);
+    }
+
+.InvieHero-copy-title {
+      font-size: 63px;
+    }
+
+.InvieHero-copy-btn{
+      border-radius:12px;
+      color: #fafafa;
+      padding: 7px 12px;
+      cursor: pointer;
+      font-size: 18px;
+      text-decoration: none;
+      background: #fd324e;
+      background: -webkit-gradient(linear, right top, left top, from(rgb(179, 51, 68)), to(rgb(253, 124, 98)));
+      background: linear-gradient(to left, rgb(179, 51, 68), rgb(253, 124, 98))
+    }
+
+.InvieFooter {
+  background-color: #273b47;
+}
