@@ -1,6 +1,14 @@
 body{
   background:greenyellow;
 }
-.claseTest{
-  transform: scale(1.1)
+.InvieHero {
+  padding: 20px;
+  height: 500px;
+
+  &-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: red;
+  }
 }

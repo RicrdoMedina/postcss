@@ -1,6 +1,7 @@
 var gulp = require('gulp')
 var postcss = require('gulp-postcss')
 var autoprefixer = require('autoprefixer')
+var cssnested = require('postcss-nested')
 var browserSync = require('browser-sync').create()
 
 // Server de desarrollo
@@ -14,8 +15,12 @@ gulp.task('serve', function () {
 
 //Tarea para procesar el css
 gulp.task('css', function () {
+  var processors = [
+    autoprefixer(),
+    cssnested
+  ]
   return gulp.src('./src/*.css')
-    .pipe(postcss([autoprefixer()]))
+    .pipe(postcss(processors))
     .pipe(gulp.dest('./dist/css'))
     .pipe(browserSync.stream())
 })
