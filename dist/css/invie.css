@@ -40,6 +40,23 @@
     }
 
 .InvieHero-copy-btn{
+     border-radius:12px;
+     color: #fafafa;
+     padding: 7px 12px;
+     cursor: pointer;
+     font-size: 18px;
+     text-decoration: none;
+     background: #fd324e;
+     background: -webkit-gradient(linear, right top, left top, from(rgb(179, 51, 68)), to(rgb(253, 124, 98)));
+     background: linear-gradient(to left, rgb(179, 51, 68), rgb(253, 124, 98));
+     border:none;
+    }
+
+.InvieFooter {
+  background-color: #273b47;
+}
+
+.InvieFooter-form-btn {
       border-radius:12px;
       color: #fafafa;
       padding: 7px 12px;
@@ -48,9 +65,6 @@
       text-decoration: none;
       background: #fd324e;
       background: -webkit-gradient(linear, right top, left top, from(rgb(179, 51, 68)), to(rgb(253, 124, 98)));
-      background: linear-gradient(to left, rgb(179, 51, 68), rgb(253, 124, 98))
+      background: linear-gradient(to left, rgb(179, 51, 68), rgb(253, 124, 98));
+      border:none;
     }
-
-.InvieFooter {
-  background-color: #273b47;
-}
